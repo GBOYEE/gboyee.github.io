@@ -8,25 +8,21 @@
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
 <style>
-  html, body { max-width: 100%; overflow-x: hidden; }
-  body { font-family: 'Inter', sans-serif; background: #0a0a0a; color: #e5e5e5; line-height: 1.7; }
-html { scroll-behavior: smooth; }
+  body { font-family: 'Inter', sans-serif; background: #0a0a0a; color: #e5e5e5; overflow-x: hidden; }
   .glass { background: rgba(255,255,255,0.04); backdrop-filter: blur(12px); border: 1px solid rgba(255,255,255,0.06); }
-  .accent { color: #22d3ee; }
-  .accent-bg { background: #22d3ee; }
+  .accent { color: #00f5ff; }
+  .accent-bg { background: #00f5ff; }
   .nav-scroll { position: fixed; top: 0; left: 0; right: 0; z-index: 50; backdrop-filter: blur(10px); border-bottom: 1px solid rgba(255,255,255,0.05); }
-  .hero { min-height: 100vh; display: flex; align-items: center; position: relative; background: radial-gradient(circle at 30% 20%, #1a1a2e 0%, #0a0a0a 60%, #16213e 100%); }
-  .section { padding: 6rem 1.5rem; max-width: 1200px; margin: 0 auto; }
-  @media (min-width: 768px) { .section { padding: 8rem 2rem; } }
+  .hero { min-height: 100vh; display: flex; align-items: center; position: relative; }
+  .section { padding: 6rem 2rem; max-width: 1200px; margin: 0 auto; }
   .grid-projects { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 2rem; }
   .card { border-radius: 1rem; padding: 2rem; transition: transform 0.3s ease, box-shadow 0.3s ease; }
   .card:hover { transform: translateY(-5px); box-shadow: 0 20px 40px -10px rgba(0,245,255,0.15); }
   .btn { display: inline-flex; align-items: center; gap: 0.5rem; padding: 0.75rem 1.5rem; border-radius: 9999px; font-weight: 600; transition: all 0.2s; }
-  .btn-primary { background: #22d3ee; color: #0a0a0a; box-shadow: 0 0 10px rgba(34,211,238,0.3); }
-  .btn-primary:hover { transform: scale(1.05); box-shadow: 0 0 25px rgba(34,211,238,0.6); }
-  .btn-outline { border: 1px solid #22d3ee; color: #22d3ee; }
-  .btn-outline:hover { background: rgba(34, 211, 238, 0.1); }
-  a:focus-visible, button:focus-visible { outline: 2px solid #22d3ee; outline-offset: 2px; }
+  .btn-primary { background: #00f5ff; color: #0a0a0a; }
+  .btn-primary:hover { transform: scale(1.05); }
+  .btn-outline { border: 1px solid #00f5ff; color: #00f5ff; }
+  .btn-outline:hover { background: rgba(0,245,255,0.1); }
   .skill-tag { display: inline-block; padding: 0.25rem 0.75rem; background: rgba(255,255,255,0.05); border-radius: 9999px; font-size: 0.875rem; margin: 0.25rem; }
   .fade-in { opacity: 0; transform: translateY(20px); transition: opacity 0.6s ease, transform 0.6s ease; }
   .fade-in.visible { opacity: 1; transform: translateY(0); }
@@ -44,7 +40,7 @@ html { scroll-behavior: smooth; }
       <a href="#skills" class="hover:text-white transition">Skills</a>
       <a href="#contact" class="hover:text-white transition">Contact</a>
     </div>
-    <button id="menu-btn" class="md:hidden text-xl" aria-label="Open menu"><i class="fa-solid fa-bars"></i></button>
+    <button id="menu-btn" class="md:hidden text-xl"><i class="fa-solid fa-bars"></i></button>
   </div>
 </nav>
 
@@ -59,11 +55,11 @@ html { scroll-behavior: smooth; }
 
 <!-- Hero -->
 <section class="hero">
-  <canvas id="hero-particles" class="absolute inset-0 w-full h-full opacity-20" style="max-width: 100%;"></canvas>
+  <canvas id="hero-particles" class="absolute inset-0 w-full h-full opacity-20"></canvas>
   <div class="max-w-6xl mx-auto px-6 relative z-10">
     <div class="max-w-2xl">
       <p class="accent mb-4 text-sm tracking-widest uppercase">AI Security Engineer • Nigeria</p>
-      <h1 class="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-extrabold leading-tight mb-6" style="text-shadow: 0 0 20px rgba(34,211,238,0.15);">Secure AI that <span class="accent">actually ships</span>.</h1>
+      <h1 class="text-5xl md:text-7xl font-bold leading-tight mb-6">Secure AI that <span class="accent">actually ships</span>.</h1>
       <p class="text-lg text-gray-400 mb-8">I build production-grade AI security infrastructure with ethical alignment and autonomous agents. End-to-end tooling for vulnerability scanning, RLHF-based alignment, and multi-agent orchestration.</p>
       <div class="flex gap-4 flex-wrap">
         <a href="#work" class="btn btn-primary"><i class="fa-solid fa-arrow-right"></i> Explore Work</a>
@@ -85,13 +81,13 @@ html { scroll-behavior: smooth; }
       <p>Based in Nigeria, I’m committed to inclusive AI that serves diverse global communities.</p>
       
       <div class="grid grid-cols-2 gap-6 mt-8">
-        <div class="glass p-6 rounded-2xl text-center">
-          <div class="text-5xl font-bold accent">29+</div>
-          <div class="text-sm text-gray-400 mt-1">Open-source repositories</div>
+        <div class="glass p-6 rounded-2xl">
+          <div class="text-3xl font-bold accent">29+</div>
+          <div class="text-sm text-gray-400">Open-source repositories</div>
         </div>
-        <div class="glass p-6 rounded-2xl text-center">
-          <div class="text-5xl font-bold accent">HiveSec</div>
-          <div class="text-sm text-gray-400 mt-1">v0.3 in production</div>
+        <div class="glass p-6 rounded-2xl">
+          <div class="text-3xl font-bold accent">HiveSec</div>
+          <div class="text-sm text-gray-400">v0.3 in production</div>
         </div>
       </div>
     </div>
