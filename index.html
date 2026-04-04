@@ -15,7 +15,8 @@ html { scroll-behavior: smooth; }
   .accent-bg { background: #22d3ee; }
   .nav-scroll { position: fixed; top: 0; left: 0; right: 0; z-index: 50; backdrop-filter: blur(10px); border-bottom: 1px solid rgba(255,255,255,0.05); }
   .hero { min-height: 100vh; display: flex; align-items: center; position: relative; background: radial-gradient(circle at 30% 20%, #1a1a2e 0%, #0a0a0a 60%, #16213e 100%); }
-  .section { padding: 8rem 2rem; max-width: 1200px; margin: 0 auto; }
+  .section { padding: 6rem 1.5rem; max-width: 1200px; margin: 0 auto; }
+  @media (min-width: 768px) { .section { padding: 8rem 2rem; } }
   .grid-projects { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 2rem; }
   .card { border-radius: 1rem; padding: 2rem; transition: transform 0.3s ease, box-shadow 0.3s ease; }
   .card:hover { transform: translateY(-5px); box-shadow: 0 20px 40px -10px rgba(0,245,255,0.15); }
@@ -57,11 +58,11 @@ html { scroll-behavior: smooth; }
 
 <!-- Hero -->
 <section class="hero">
-  <canvas id="hero-particles" class="absolute inset-0 w-full h-full opacity-20"></canvas>
+  <canvas id="hero-particles" class="absolute inset-0 w-full h-full opacity-20" style="max-width: 100%;"></canvas>
   <div class="max-w-6xl mx-auto px-6 relative z-10">
     <div class="max-w-2xl">
       <p class="accent mb-4 text-sm tracking-widest uppercase">AI Security Engineer • Nigeria</p>
-      <h1 class="text-5xl md:text-7xl font-extrabold leading-tight mb-6" style="text-shadow: 0 0 20px rgba(34,211,238,0.15);">Secure AI that <span class="accent">actually ships</span>.</h1>
+      <h1 class="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-extrabold leading-tight mb-6" style="text-shadow: 0 0 20px rgba(34,211,238,0.15);">Secure AI that <span class="accent">actually ships</span>.</h1>
       <p class="text-lg text-gray-400 mb-8">I build production-grade AI security infrastructure with ethical alignment and autonomous agents. End-to-end tooling for vulnerability scanning, RLHF-based alignment, and multi-agent orchestration.</p>
       <div class="flex gap-4 flex-wrap">
         <a href="#work" class="btn btn-primary"><i class="fa-solid fa-arrow-right"></i> Explore Work</a>
