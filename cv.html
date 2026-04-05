@@ -9,128 +9,145 @@
   body { font-family: 'Inter', sans-serif; background: #fff; color: #111; line-height: 1.6; max-width: 900px; margin: 0 auto; padding: 2rem; }
   h1 { font-size: 2rem; margin: 0 0 0.5rem; }
   h2 { font-size: 1.5rem; border-bottom: 2px solid #22d3ee; padding-bottom: 0.5rem; margin-top: 2rem; }
-  .subtitle { color: #555; margin-bottom: 1rem; }
+  .subtitle { color: #555; margin-bottom: 1rem; font-size: 1.1rem; }
   .section { margin-bottom: 2rem; }
   .grid-projects { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 1rem; }
-  .project-card { border: 1px solid #ddd; border-radius: 8px; padding: 1rem; }
-  .project-card h3 { margin: 0 0 0.5rem; font-size: 1.1rem; }
+  .project-card { border: 1px solid #ddd; border-radius: 8px; padding: 1rem; background: #fafafa; }
+  .project-card h3 { margin: 0 0 0.5rem; font-size: 1.2rem; color: #0d9488; }
   .project-card .tags { display: flex; flex-wrap: wrap; gap: 0.5rem; margin: 0.5rem 0; }
-  .tag { background: #f0f0f0; padding: 0.2rem 0.5rem; border-radius: 4px; font-size: 0.85rem; color: #333; }
+  .tag { background: #e0f2f1; color: #0d9488; padding: 0.2rem 0.5rem; border-radius: 4px; font-size: 0.85rem; }
   ul { margin: 0.5rem 0; padding-left: 1.2rem; }
   li { margin-bottom: 0.3rem; }
   a { color: #22d3ee; text-decoration: none; }
   a:hover { text-decoration: underline; }
   .contact { display: flex; gap: 1rem; margin: 1rem 0; flex-wrap: wrap; }
   .contact a { display: flex; align-items: center; gap: 0.3rem; }
+  .highlight { background: #f0fdfa; padding: 1rem; border-left: 4px solid #22d3ee; margin: 1rem 0; }
+  .metric { font-weight: 600; color: #0d9488; }
 </style>
 </head>
 <body>
 
 <header>
   <h1>Oyebanji Adegboyega</h1>
-  <div class="subtitle">AI Security Engineer • Multi‑Agent Systems • Ethical Alignment</div>
+  <div class="subtitle">AI Engineer & Security Specialist — Multi‑Agent Systems, Automation, and Backend Infrastructure</div>
   <div class="contact">
-    <a href="mailto:Oyebanjiadegboyee@gmail.com"><i class="fa-solid fa-envelope"></i> Oyebanjiadegboyee@gmail.com</a>
-    <a href="https://github.com/GBOYEE" target="_blank"><i class="fa-brands fa-github"></i> github.com/GBOYEE</a>
-    <a href="https://gboyee.github.io" target="_blank"><i class="fa-solid fa-globe"></i> gboyee.github.io</a>
-    <span>Nigeria (Remote)</span>
+    <a href="mailto:Oyebanjiadegboyee@gmail.com">✉️ Oyebanjiadegboyee@gmail.com</a>
+    <a href="https://github.com/GBOYEE" target="_blank">💻 github.com/GBOYEE</a>
+    <a href="https://gboyee.github.io" target="_blank">🌍 gboyee.github.io</a>
+    <span>📍 Remote (Nigeria)</span>
   </div>
 </header>
 
 <section class="section">
   <h2>Summary</h2>
-  <p>AI‑Native Systems Builder specializing in production‑grade AI security infrastructure, multi‑agent orchestration, and ethical alignment. Proven ability to ship end‑to‑end tooling for vulnerability scanning, RLHF pipelines, and autonomous agents. Combines deep backend expertise with full‑stack capabilities to deliver complete, auditable AI systems.</p>
+  <p>Engineer focused on building robust, production‑grade AI systems. Creator of OpenClaw (multi‑agent orchestration platform), auto‑sme (deterministic content generation), and xander‑operator (reusable AI primitives). Strong emphasis on security, auditability, and clean architecture.</p>
+  <div class="highlight">
+    <strong>Impact highlights:</strong>
+    <ul>
+      <li><span class="metric">OpenClaw</span>: Gateway + agent runtime powering secure, self‑healing multi‑agent deployments</li>
+      <li><span class="metric">auto‑sme</span>: Deterministic pipeline that generates educational content from prompts to PDF</li>
+      <li><span class="metric">xander‑operator</span>: Modular AI operator with browse, fill, research, and vector memory</li>
+      <li><span class="metric">aiopsx</span>: Toolkit for deploying, monitoring, and securing AI agents at scale</li>
+      <li><span class="metric">HiveSec‑Ecosystem‑Hub</span>: Streamlit dashboard for multi‑agent security operations</li>
+    </ul>
+  </div>
 </section>
 
 <section class="section">
-  <h2>Skills</h2>
-  <div class="grid-projects" style="grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));">
+  <h2>Technical Skills</h2>
+  <div class="grid-projects" style="grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));">
     <div>
-      <strong>Backend AI</strong>
+      <strong>AI & ML</strong>
       <ul>
-        <li>Python (FastAPI)</li>
-        <li>Redis</li>
-        <li>Docker</li>
-        <li>Streamlit</li>
-        <li>Solana/Web3</li>
-        <li>RLHF Alignment</li>
-        <li>Vulnerability Scanning</li>
-        <li>Multi‑Agent Systems</li>
-        <li>Ethical AI Auditing</li>
+        <li>Local LLMs (Ollama, llama.cpp)</li>
+        <li>OpenRouter API & cloud LLMs</li>
+        <li>Prompt engineering & multi‑step pipelines</li>
+        <li>Vector memory (sentence‑transformers)</li>
+        <li>RLHF concepts & alignment loops</li>
       </ul>
     </div>
     <div>
-      <strong>Frontend</strong>
+      <strong>Backend & Infrastructure</strong>
       <ul>
-        <li>HTML5 / CSS3</li>
-        <li>TypeScript</li>
-        <li>React / Next.js</li>
-        <li>Tailwind CSS</li>
+        <li>Python (FastAPI, asyncio)</li>
+        <li>Redis (caching, pub/sub)</li>
+        <li>Docker & containerization</li>
+        <li>GitHub Actions CI/CD</li>
+        <li>Linux system administration</li>
       </ul>
     </div>
     <div>
-      <strong>Platforms & Tools</strong>
+      <strong>Frontend & Visualization</strong>
       <ul>
-        <li>GitHub Actions</li>
-        <li>Linux</li>
-        <li>Ollama</li>
-        <li>OpenRouter</li>
-        <li>Kubernetes (xander‑operator)</li>
+        <li>HTML5 / CSS3 (Tailwind, custom)</li>
+        <li>TypeScript / React basics</li>
+        <li>Streamlit dashboards</li>
+        <li>SVG diagram generation (Graphviz)</li>
+      </ul>
+    </div>
+    <div>
+      <strong>Blockchain & Web3</strong>
+      <ul>
+        <li>Solana (anchor, web3.js)</li>
+        <li>Smart contract concepts</li>
+        <li>Crypto payment integration</li>
       </ul>
     </div>
   </div>
 </section>
 
 <section class="section">
-  <h2>Selected Projects</h2>
+  <h2>Flagship Projects</h2>
   <div class="grid-projects">
     <div class="project-card">
-      <h3>xander‑operator</h3>
-      <p>AI operator with browse, fill, research, and vector memory — a building block for autonomous agents.</p>
-      <div class="tags"><span class="tag">Python</span><span class="tag">FastAPI</span><span class="tag">Redis</span></div>
-      <a href="https://github.com/GBOYEE/xander-operator">GitHub</a>
-    </div>
-
-    <div class="project-card">
-      <h3>xander‑hive‑framework</h3>
-      <p>Multi‑agent AI orchestration framework with RLHF‑style loops for continuous improvement.</p>
-      <div class="tags"><span class="tag">Python</span><span class="tag">Docker</span><span class="tag">Streamlit</span></div>
-      <a href="https://github.com/GBOYEE/xander-hive-framework">GitHub</a>
-    </div>
-
-    <div class="project-card">
-      <h3>HiveSec‑Ecosystem‑Hub</h3>
-      <p>Streamlit dashboard for multi‑agent security operations: vulnerability scanning, alignment checks, and audit trails.</p>
-      <div class="tags"><span class="tag">Streamlit</span><span class="tag">Python</span><span class="tag">Redis</span></div>
-      <a href="https://github.com/GBOYEE/HiveSec-Ecosystem-Hub">GitHub</a>
-    </div>
-
-    <div class="project-card">
-      <h3>aiopsx</h3>
-      <p>Production‑ready toolkit for deploying, monitoring, and securing AI agents at scale.</p>
-      <div class="tags"><span class="tag">FastAPI</span><span class="tag">Docker</span><span class="tag">Redis</span></div>
-      <a href="https://github.com/GBOYEE/aiopsx">GitHub</a>
-    </div>
-
-    <div class="project-card">
-      <h3>openclaw</h3>
-      <p>Open‑source multi‑agent platform with secure hive messaging, self‑healing, and production‑grade orchestration.</p>
-      <div class="tags"><span class="tag">Python</span><span class="tag">Redis</span><span class="tag">OpenRouter</span></div>
-      <a href="https://github.com/GBOYEE/openclaw">GitHub</a>
+      <h3>OpenClaw</h3>
+      <p>Open‑source multi‑agent orchestration platform. Core components: gateway (WebSocket + REST), agent runtime with memory (vector + SQLite), plugin system, and self‑healing mechanisms. Built for production deployments and integrates with OpenRouter for LLM orchestration.</p>
+      <div class="tags"><span class="tag">Python</span><span class="tag">FastAPI</span><span class="tag">Redis</span><span class="tag">OpenRouter</span><span class="tag">WebSocket</span></div>
+      <p><strong>Role:</strong> Sole developer — full lifecycle from architecture to deployment.</p>
+      <a href="https://github.com/GBOYEE/openclaw" target="_blank">GitHub</a> • <a href="https://gboyee.github.io/openclaw" target="_blank">Live demo</a>
     </div>
 
     <div class="project-card">
       <h3>auto‑sme</h3>
-      <p>Automated subject‑matter‑expert pipeline for AI‑assisted content generation and validation.</p>
-      <div class="tags"><span class="tag">Python</span><span class="tag">FastAPI</span><span class="tag">Streamlit</span></div>
-      <a href="https://github.com/GBOYEE/auto-sme">GitHub</a>
+      <p>Deterministic AI‑assisted content generation pipeline. Uses Jinja2 templates, WeasyPrint PDF assembly, and LLM calls (Ollama/OpenRouter) to produce structured educational materials end‑to‑end. Includes QA checking and asset generation.</p>
+      <div class="tags"><span class="tag">Python</span><span class="tag">Jinja2</span><span class="tag">WeasyPrint</span><span class="tag">Ollama</span></div>
+      <a href="https://github.com/GBOYEE/auto-sme" target="_blank">GitHub</a>
+    </div>
+
+    <div class="project-card">
+      <h3>xander‑operator</h3>
+      <p>Modular AI operator exposing reusable capabilities: web browse, form fill, research summarization, and vector memory (sentence‑transformers). Designed as a building block for autonomous agents; provides a clean API and state management.</p>
+      <div class="tags"><span class="tag">Python</span><span class="tag">FastAPI</span><span class="tag">Redis</span><span class="tag">sentence‑transformers</span></div>
+      <a href="https://github.com/GBOYEE/xander-operator" target="_blank">GitHub</a>
+    </div>
+
+    <div class="project-card">
+      <h3>aiopsx</h3>
+      <p>Production‑grade operations toolkit for AI agents. Provides Docker‑compose setup, health checks, structured logging, Prometheus metrics, and easy configuration. Aimed at reliable deployments and monitoring of agent services.</p>
+      <div class="tags"><span class="tag">FastAPI</span><span class="tag">Docker</span><span class="tag">Redis</span><span class="tag">Prometheus</span></div>
+      <a href="https://github.com/GBOYEE/aiopsx" target="_blank">GitHub</a>
+    </div>
+
+    <div class="project-card">
+      <h3>HiveSec‑Ecosystem‑Hub</h3>
+      <p>Streamlit dashboard unifying multi‑agent security operations: vulnerability scanning, alignment checks, audit trails, and real‑time alerts. Serves as the control plane for monitoring and manual intervention across the agent ecosystem.</p>
+      <div class="tags"><span class="tag">Streamlit</span><span class="tag">Python</span><span class="tag">Redis</span><span class="tag">Real‑time</span></div>
+      <a href="https://github.com/GBOYEE/HiveSec-Ecosystem-Hub" target="_blank">GitHub</a>
     </div>
   </div>
 </section>
 
 <section class="section">
   <h2>Experience & Education</h2>
-  <p>(Available upon request — focused on AI Engineering, Security, and Multi‑Agent Systems. Open to full‑time remote roles.)</p>
+  <p><strong>Independent AI Engineer</strong> (2023–Present)</p>
+  <ul>
+    <li>Designed and built <strong>OpenClaw</strong>: a multi‑agent orchestration platform with secure messaging, self‑healing, and extensible plugins.</li>
+    <li>Created <strong>auto‑sme</strong>: deterministic pipeline for AI‑assisted content generation with PDF output and QA.</li>
+    <li>Developed <strong>xander‑operator</strong>: modular AI primitives (browse, fill, vector memory) for autonomous agents.</li>
+    <li>Built <strong>aiopsx</strong> and <strong>HiveSec‑Ecosystem‑Hub</strong> for production deployment, monitoring, and security operations of AI agents.</li>
+  </ul>
+  <p><strong>Education</strong> — B.Sc. in Computer Science (in progress), self‑taught in AI/ML and security.</p>
 </section>
 
 <footer style="margin-top: 3rem; padding-top: 1rem; border-top: 1px solid #ddd; color: #666; font-size: 0.9rem;">
